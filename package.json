@@ -1,0 +1,22 @@
+{
+  "name": "opencode-pokemon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Animated ASCII Pikachu in the OpenCode sidebar that reacts to the agent's state",
+  "type": "module",
+  "exports": {
+    "./tui": "./dist/tui.js"
+  },
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.0",
+    "@opentui/solid": ">=0.5.17",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "babel-preset-solid": "^1.9.12"
+  }
+}
